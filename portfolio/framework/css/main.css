@@ -1,12 +1,13 @@
-* {
+/* * {
     border: 1px solid red !important;
-}
+} */
 
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 .grid {
@@ -17,14 +18,26 @@
 
 .row {
     width: 100%;
-    margin-bottom: 20px;
     display: flex;
 }
 
-@media only screen and (max-width: 500px) {
-  p {
-    display: none;
-  }
+.logo {
+  padding-left: 10px;
+  padding-top: 35px;
+}
+
+.middle {
+  border-top: 4px solid #d4d0d6;
+  padding: 10px;
+}
+
+.center-image {
+  padding: 10px;
+}
+
+strong {
+  font-size: larger;
+  font-weight: bolder;
 }
 
 img {
@@ -32,9 +45,47 @@ img {
   max-height:100%;
 }
 
+h1 {
+  margin-bottom: 3px;
+  text-align: right;
+  font-size: -webkit-xxx-large;
+  font-weight: 100;
+}
+
+h3 {
+  text-align: center;
+  color: #747704;
+  margin-bottom: 2px;
+  margin-top: 5px;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+h2 {
+  color: #BCBBBB;
+  margin-bottom: 3px;
+  padding-left: 20px;
+}
+
+h4 {
+  margin-top: 0px;
+  text-align: right;
+  font-weight: 900;
+  font-size: larger;
+}
+
+h5 {
+  text-align: center;
+  margin-top: 2px;
+}
+
 p {
-  margin: 10px;
   overflow: auto;
+}
+
+a {
+  color: #BCBBBB;
+  font-size: medium;
 }
 
 .col-1 {
@@ -51,6 +102,7 @@ p {
 
 .col-4 {
     width: 33.33%;
+    padding: 10px;
 }
 
 .col-5 {
@@ -60,6 +112,8 @@ p {
 .col-6 {
     width: 50%;
     justify-content: space-between;
+    color: #747704;
+    padding: 10px;
 }
 
 .col-7 {
